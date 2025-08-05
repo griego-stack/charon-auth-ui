@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const { $env } = useNuxtApp();
+const {
+  public: { appName },
+} = useRuntimeConfig();
 
 useHead({
-  title: $env.appName || "Charon Auth UI",
+  title: appName || "Charon Auth UI",
   meta: [
     {
       name: "description",
@@ -10,9 +12,7 @@ useHead({
     },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
   ],
-  htmlAttrs: {
-    lang: "en",
-  },
+  htmlAttrs: { lang: "en" },
 });
 </script>
 

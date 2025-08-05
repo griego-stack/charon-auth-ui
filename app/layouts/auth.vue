@@ -22,6 +22,8 @@ defineProps<Props>();
             </h1>
           </slot>
         </div>
+
+        <slot />
       </div>
     </section>
   </main>

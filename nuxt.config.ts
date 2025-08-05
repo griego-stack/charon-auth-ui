@@ -7,7 +7,15 @@ export default defineNuxtConfig({
   dir: { pages: "features" },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
-
+  runtimeConfig: {
+    public: {
+      frontendURL: process.env.FRONTEND_URL || "http://localhost:3000",
+      backendURL: process.env.BACKEND_URL || "http://localhost:8000",
+      apiURL: process.env.API_URL || "http://localhost:8000/api",
+      appName: process.env.APP_NAME || "Charon Auth UI",
+      googleClientId: process.env.GOOGLE_CLIENT_ID || "",
+    },
+  },
   hooks: {
     "pages:extend"(pages) {
       function filterAndFixPaths(pages: NuxtPage[] = []) {
@@ -38,6 +46,5 @@ export default defineNuxtConfig({
       filterAndFixPaths(pages);
     },
   },
-
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxt/icon"],
 });
