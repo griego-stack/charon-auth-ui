@@ -1,6 +1,8 @@
 <script setup lang="ts">
+const { $env } = useNuxtApp();
+
 useHead({
-  title: "Charon Auth UI",
+  title: $env.appName || "Charon Auth UI",
   meta: [
     {
       name: "description",
