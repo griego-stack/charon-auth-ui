@@ -2,6 +2,11 @@
 
 <template>
   <NuxtLayout name="auth" title="Create Account">
-    <SocialGoogle />
+    <div class="flex w-full flex-col items-center justify-center gap-1">
+      <SocialGoogle class="w-full" />
+      <SocialGithub class="w-full" />
+    </div>
+
+    <Divider>or</Divider>
   </NuxtLayout>
 </template>

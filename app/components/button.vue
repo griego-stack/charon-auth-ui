@@ -24,7 +24,7 @@ const loading = defineModel<boolean>("loading", {
     }"
     :disabled="loading"
   >
-    <Icon v-if="icon" :name="icon" class="inline-block mr-2" />
+    <Icon v-if="icon" :name="icon" class="inline-block mr-2 text-xl" />
     <slot />
   </component>
 </template>

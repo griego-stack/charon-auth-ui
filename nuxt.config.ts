@@ -14,6 +14,8 @@ export default defineNuxtConfig({
       apiURL: process.env.API_URL || "http://localhost:8000/api",
       appName: process.env.APP_NAME || "Charon Auth UI",
       googleClientId: process.env.GOOGLE_CLIENT_ID || "",
+      githubClientId: process.env.GITHUB_CLIENT_ID || "",
+      githubRedirectUri: process.env.GITHUB_REDIRECT_URI || "",
     },
   },
   hooks: {
