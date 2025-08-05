@@ -1,2 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @import "./variables.css";
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--gs-c-bg);
+  color: var(--gs-c-text-1);
+  transition: background-color 0.3s, color 0.3s;
+}

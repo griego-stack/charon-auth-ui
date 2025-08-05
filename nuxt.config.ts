@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   dir: { pages: "features" },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
+
   hooks: {
     "pages:extend"(pages) {
       function filterAndFixPaths(pages: NuxtPage[] = []) {
@@ -37,4 +38,6 @@ export default defineNuxtConfig({
       filterAndFixPaths(pages);
     },
   },
+
+  modules: ["@nuxt/image"],
 });
