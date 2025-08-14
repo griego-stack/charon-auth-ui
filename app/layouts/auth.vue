@@ -24,6 +24,10 @@ defineProps<Props>();
         </div>
 
         <slot />
+
+        <Divider v-if="$slots.footer" />
+
+        <slot name="footer" />
       </div>
     </section>
   </main>
