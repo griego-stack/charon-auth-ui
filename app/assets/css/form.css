@@ -1,0 +1,33 @@
+.InputOuter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.2rem;
+
+  .InputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.2rem;
+
+    .InputInner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0.2rem;
+    }
+  }
+
+  .InputMessages {
+    width: 100%;
+
+    .InputMessage {
+      color: var(--color-red-500);
+      list-style: inside disc;
+    }
+  }
+}
+
+/* InputHelp
+InputMessages
+InputMessage */

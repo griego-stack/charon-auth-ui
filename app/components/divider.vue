@@ -12,8 +12,8 @@ withDefaults(defineProps<Props>(), {
     role="separator"
     :aria-orientation="direction"
     :class="[
-      'bg-(--gs-c-divider) flex items-center justify-center',
-      direction === 'horizontal' ? 'w-full h-0.5' : 'w-0.5 h-full',
+      'bg-(--gs-c-divider-inverse) flex items-center justify-center',
+      direction === 'horizontal' ? 'w-full h-[1px]' : 'w-[1px] h-full',
     ]"
   >
     <div
